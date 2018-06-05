@@ -8,7 +8,11 @@ module.exports = {
             {
                 test: /\.jsx?$/,
                 exclude: /node_modules/,
-                loaders: ['babel-loader?presets[]=react,presets[]=es2015'],
+                loader: 'babel-loader',
+                query: {
+                    plugins: ['transform-object-rest-spread', 'transform-decorators-legacy'],
+                    presets: ['react', 'es2015']
+                }
                 //loaders: ["react-hot", 'babel-loader'],
                 //query: {
                 //    presets : ['es2015', 'react']

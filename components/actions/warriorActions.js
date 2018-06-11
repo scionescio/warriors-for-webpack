@@ -1,12 +1,6 @@
-export function addWarrior(newWarrior) {
+export function addWarrior(payload) {
   return {
-    type: 'CREATE_WARRIOR',
-    payload: {
-      id,
-      username,
-      weapon,
-      rating,
-      secret
-    },
-  }
+    type: "CREATE_WARRIOR",
+    payload
+  };
 }

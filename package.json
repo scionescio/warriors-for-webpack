@@ -32,7 +32,7 @@
     "webpack": "^4.8.3",
     "webpack-cli": "^2.1.4"
   },
-  "heroku-postbuild": "webpack -p --progress",
+  "heroku-prebuild": "webpack",
   "engines": {
     "node": "8.11.2"
   },

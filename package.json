@@ -33,7 +33,7 @@
     "node": "8.11.2"
   },
   "scripts": {
-    "start": "node server.js",
+    "start": "webpack && node server.js",
     "dev": "webpack-dev-server",
     "build": "webpack"
   },

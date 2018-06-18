@@ -17,7 +17,7 @@ app.use("/show", express.static(path.join(__dirname, "dist"))); //?
 //   console.log(__dirname + "/dist/bundle.js");
 // });
 
-app.set("port", process.env.PORT || 8080);
+app.set("port", process.env.PORT || 9000);
 
 app.listen(app.get("port"), function() {
   console.log("app started");

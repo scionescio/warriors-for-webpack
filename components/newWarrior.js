@@ -23,7 +23,8 @@ export default class NewWarrior extends React.Component {
       weapon: "",
       rating: 0,
       secret: "",
-      tipHidden: true
+      tipHidden: true,
+      mockDataSent: false
     };
 
     this.updateUsername = this.updateUsername.bind(this);
@@ -84,6 +85,32 @@ export default class NewWarrior extends React.Component {
     //   this.updateTipHidden(false);
     //   this.updateId(); //only do that if submit is successful
     // });
+  }
+
+  componentDidMount() {
+    //   if (!this.state.mockDataSent) {
+    //     store.dispatch({
+    //       type: "CREATE_WARRIOR",
+    //       payload: {
+    //         id: -1,
+    //         username: "Naruto",
+    //         weapon: "Rasengan",
+    //         rating: "5",
+    //         secret: "Nine-tailed Fox"
+    //       }
+    //     });
+    // store.dispatch({
+    //   type: "CREATE_WARRIOR",
+    //   payload: {
+    //     id: -2,
+    //     username: "Hinata",
+    //     weapon: "Byakugan",
+    //     rating: "3",
+    //     secret: "Wife-Mode"
+    //   }
+    // });
+    //   this.setState({ mockDataSent: true });
+    // }
   }
 
   render() {

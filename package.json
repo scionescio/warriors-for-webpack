@@ -32,11 +32,12 @@
     "webpack": "^4.8.3",
     "webpack-cli": "^2.1.4"
   },
+  "heroku-postbuild": "webpack -p --progress",
   "engines": {
     "node": "8.11.2"
   },
   "scripts": {
-    "start": "webpack && node server.js",
+    "start": "node server.js",
     "dev": "webpack-dev-server",
     "build": "webpack"
   },

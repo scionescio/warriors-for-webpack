@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import store from "/Users/Pascalis/Documents/Code/warriors-for-webpack/components/store.js";
+import store from "../store.js";
 
 export class singleWarrior extends React.Component {
   constructor(props) {

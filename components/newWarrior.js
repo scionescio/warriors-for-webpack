@@ -1,6 +1,5 @@
 import React from "react";
 import PasswordMask from "react-password-mask";
-import { game, square } from "../index.css";
 import { Tips } from "./tips/view"; //just added brackets to solve the problem
 import reducers from "./reducers/warriorReducers";
 import { connect } from "react-redux";
@@ -115,7 +114,7 @@ export default class NewWarrior extends React.Component {
 
   render() {
     return (
-      <game>
+      <div>
         <ol>
           <form> Name </form>
           <input type="text" onChange={this.updateUsername} />
@@ -149,7 +148,7 @@ export default class NewWarrior extends React.Component {
             hidden={this.state.tipHidden}
           />
         </ol>
-      </game>
+      </div>
     );
   }
 }

@@ -4,10 +4,14 @@ var path = require("path");
 var app = express();
 // var routes = require("/index");
 
-// app.use("/static", express.static(path.join(__dirname, "dist"))); // correct one
+// app.use(
+//   "/static",
+//   express.static(path.join(__dirname, "dist/static/bundle.js"))
+// ); // correct one
+console.log(path.join(__dirname, "dist/static"));
 
 app.use("/static", function(req, res) {
-  res.sendFile(path.join(__dirname + "/dist/bundle.js"));
+  res.sendFile(path.join(__dirname + "/dist/static/bundle.js"));
 });
 
 console.log(path.join(__dirname + "/dist/bundle.js"));

@@ -8,13 +8,13 @@ var app = express();
 //   "/static",
 //   express.static(path.join(__dirname, "dist/static/bundle.js"))
 // ); // correct one
-console.log(path.join(__dirname, "dist/static"));
+// console.log(path.join(__dirname, "dist/static"));
 
 app.use("/static", function(req, res) {
   res.sendFile(path.join(__dirname + "/dist/static/bundle.js"));
 });
 
-console.log(path.join(__dirname + "/dist/bundle.js"));
+// console.log(path.join(__dirname + "/dist/bundle.js"));
 
 // console.log(app.use("/static", express.static(path.join(__dirname, "dist"))));
 

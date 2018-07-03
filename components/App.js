@@ -1,5 +1,5 @@
 import React from "react";
-import NewWarrior from "./newWarrior";
+import NewWarrior from "./warriorAdd/index.js";
 import ShowWarriors from "./warriorDisplay/mockWarriors";
 import { Switch, Route, Link, BrowserRouter } from "react-router-dom";
 import store from "./store.js";

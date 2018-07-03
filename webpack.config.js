@@ -16,11 +16,7 @@ module.exports = {
             "transform-decorators-legacy"
           ],
           presets: ["react", "es2015"]
-        }
-        //loaders: ["react-hot", 'babel-loader'],
-        //query: {
-        //    presets : ['es2015', 'react']
-        //}
+        } //@ future me, suck it
       },
       {
         test: /\.css$/,

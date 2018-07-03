@@ -1,5 +1,4 @@
 import React from "react";
-import PasswordMask from "react-password-mask";
 import { Tips } from "./tips/view"; //just added brackets to solve the problem
 import reducers from "./reducers/warriorReducers";
 import { connect } from "react-redux";

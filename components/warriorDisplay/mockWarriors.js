@@ -3,16 +3,23 @@ import { Link } from "react-router-dom";
 import store from "../store.js";
 import singleWarrior from "./singleWarrior";
 import { connect } from "react-redux";
+import injectSheet from "react-jss";
+import styles from "./styles";
 
-const ShowWarriors = props => {
+const ShowWarriors = ({ warriors, classes }) => {
   return (
     <div>
-      <h2>All added Warriors</h2>
-      <ol>
-        {props.warriors.map(function(warrior, i) {
+      <Link to="/">
+        <h3 className={classes.header}> Warrior Registration </h3>
+      </Link>
+      <h2 className={classes.header}>All added Warriors </h2>
+      <ol className={classes.inputAndOutput}>
+        {warriors.map(function(warrior, i) {
           return (
             // <Link to={"/show/$"{warrior.id}"}">
-            <li key={i}>{warrior.username + " " + warrior.rating}</li>
+            <li key={i}>
+              {warrior.username + " " + warrior.rating + " " + warrior.weapon}
+            </li>
             // </Link>
           );
         })}
@@ -30,4 +37,6 @@ const mapStateToProps = state => {
   };
 };
 
-export default connect(mapStateToProps)(ShowWarriors);
+const ShowWarriorsWithStyle = injectSheet(styles)(ShowWarriors);
+//this is ugly
+export default connect(mapStateToProps)(ShowWarriorsWithStyle);

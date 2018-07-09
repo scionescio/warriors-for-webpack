@@ -18,7 +18,7 @@ const styles = {
     justifyContent: "center",
     margin: [10, 10, 0, 10],
     padding: [0, 24],
-    minHeight: "60%",
+    minHeight: "70%",
     width: 600,
     backgroundColor: "rgba(16, 34, 48, 0.75)",
     maxHeight: "80%",

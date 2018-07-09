@@ -5,7 +5,6 @@ const styles = {
     fontFamily: "Roboto, sans-serif",
     backgroundColor: "rgba(63, 35, 43, 0.8)",
     padding: [20, 281.5, 20],
-    margin: 5,
     color: "white",
     fontWeight: 200
   },
@@ -17,27 +16,28 @@ const styles = {
   container: {
     display: "flex",
     justifyContent: "center",
-    margin: 10,
-    padding: [0, 24, 24],
+    margin: [10, 10, 0, 10],
+    padding: [0, 24],
     minHeight: "60%",
     width: 600,
-    backgroundColor: "rgba(16, 34, 48, 0.5)",
+    backgroundColor: "rgba(16, 34, 48, 0.75)",
     maxHeight: "80%",
     fontFamily: "Roboto, sans-serif"
   },
   inputAndOption: {
-    textAlign: "center",
-    padding: [10, 62],
+    textAlign: "left",
+    width: 300,
+    padding: [0, 10],
     backgroundColor: "rgba(255, 255, 255, 0)",
     border: "none",
     borderBottom: "1px solid white",
     color: "white",
     lineHeight: 2,
-    fontSize: 15
+    fontSize: 15,
+    margin: "auto"
   },
   form: {
-    margin: -30,
-    padding: [24, 24, 24],
+    padding: [0, 24],
     textAlign: "center"
   },
   button: {
@@ -46,10 +46,24 @@ const styles = {
     fontFamily: "Roboto, sans-serif",
     fontWeight: 200,
     color: "white",
-    backgroundColor: "rgba(63, 35, 43, 0.9)",
+    backgroundColor: "rgba(128, 136, 99, 0.9)",
     cursor: "pointer",
     border: "none",
-    borderRadius: 5
+    fontSize: 15,
+    fontWeight: "bold",
+    borderRadius: 5,
+    width: 300
+  },
+  outerWrapper: {
+    margin: "auto",
+    display: "block",
+    textAlign: "center",
+    position: "relative"
+  },
+  innerWrapper: {
+    marginRight: "auto",
+    marginLeft: "auto",
+    marginTop: 140
   },
   skill: {
     color: "white",
@@ -58,7 +72,7 @@ const styles = {
     fontFamily: "Roboto, sans-serif"
   },
   select: {
-    width: 170,
+    width: 230,
     fontWeight: 600,
     fontFamily: "Roboto, sans-serif",
     color: "rgba(63, 35, 43, 0.8)",

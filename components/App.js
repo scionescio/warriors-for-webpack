@@ -40,18 +40,17 @@ const styles = {
     backgroundRepeat: "no-repeat"
   },
   button: {
-    minWidth: "100%",
     display: "block",
-    padding: [15, 100],
+    padding: [10, 0],
     textDecoration: "none",
     textAlign: "center",
     justifyContent: "center",
-    width: "617",
-    padding: 15,
     fontFamily: "Roboto, sans-serif",
     fontWeight: 200,
     color: "white",
-    backgroundColor: "rgba(63, 35, 43, 0.8)"
+    backgroundColor: "rgba(128, 136, 99, 0.9)",
+    margin: "0 auto",
+    width: 648
   }
 };
 

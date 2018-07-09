@@ -21,7 +21,7 @@ const styles = {
     fontWeight: 200,
     paddingRight: 5,
     fontFamily: "Roboto, sans-serif",
-    paddingTop: 200
+    paddingTop: 100
   }
 };
 

@@ -13,17 +13,22 @@ const ShowWarriors = ({ warriors, classes }) => {
         <h3 className={classes.header}> Warrior Registration </h3>
       </Link>
       <h2 className={classes.header}>All added Warriors </h2>
-      <ol className={classes.inputAndOutput}>
+      <ul className={classes.inputAndOutput}>
         {warriors.map(function(warrior, i) {
           return (
             // <Link to={"/show/$"{warrior.id}"}">
             <li key={i}>
-              {warrior.username + " " + warrior.rating + " " + warrior.weapon}
+              {"NAME: " +
+                warrior.username +
+                " , RATING: " +
+                warrior.rating +
+                " , WEAPON: " +
+                warrior.weapon}
             </li>
             // </Link>
           );
         })}
-      </ol>
+      </ul>
       <Link to="/">
         <button>Add new warrior</button>
       </Link>

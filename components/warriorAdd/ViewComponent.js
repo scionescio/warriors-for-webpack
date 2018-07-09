@@ -23,59 +23,72 @@ const Warrior = ({
     <div className={classes.container}>
       <form className={classes.form}>
         <div className={classes.formHeader}>Registration Form</div>
-        <label for="username" />
-        <input
-          type="text"
-          className={classes.inputAndOption}
-          id="username"
-          placeholder="Name of Warrior"
-          onChange={updateUsername}
-          autocomplete="off"
-        />
-        <p />
-        <label for="weapon" />
-        <input
-          type="text"
-          className={classes.inputAndOption}
-          id="weapon"
-          placeholder="Weapon of Warrior"
-          onChange={updateWeapon}
-          autocomplete="off"
-        />
-        <p />
-        <label for="skill" className={classes.skill}>
-          Skill Level
-        </label>
-        <select onChange={updateRating} id="skill" className={classes.select}>
-          {/* prettier-ignore */}
-          <option className={classes.select} value="0">
+        <div className={classes.outerWrapper}>
+          <div className={classes.innerWrapper}>
+            <label for="username" />
+            <input
+              type="text"
+              className={classes.inputAndOption}
+              id="username"
+              placeholder="Name"
+              onChange={updateUsername}
+              autocomplete="off"
+            />
+            <p>
+              <label for="weapon" />
+              <input
+                type="text"
+                className={classes.inputAndOption}
+                id="weapon"
+                placeholder="Weapon"
+                onChange={updateWeapon}
+                autocomplete="off"
+              />
+            </p>
+            <p />
+            <label for="skill" className={classes.skill}>
+              Skill Level
+            </label>
+            <select
+              onChange={updateRating}
+              id="skill"
+              className={classes.select}
+            >
+              {/* prettier-ignore */}
+              <option className={classes.select} value="0">
                 0
           </option>
-          {/* prettier-ignore */}
-          <option className={classes.select} value="1">
+              {/* prettier-ignore */}
+              <option className={classes.select} value="1">
                 1
           </option>
-          {/* prettier-ignore */}
-          <option className={classes.select} value="2">
+              {/* prettier-ignore */}
+              <option className={classes.select} value="2">
                 2
           </option>
-          {/* prettier-ignore */}
-          <option className={classes.select} value="3">
+              {/* prettier-ignore */}
+              <option className={classes.select} value="3">
                 3
           </option>
-          {/* prettier-ignore */}
-          <option className={classes.select} value="4">
+              {/* prettier-ignore */}
+              <option className={classes.select} value="4">
                 4
           </option>
-          {/* prettier-ignore */}
-          <option className={classes.select} value="5">
+              {/* prettier-ignore */}
+              <option className={classes.select} value="5">
                 5
           </option>
-        </select>
-        <p />
-        <button type="button" onClick={handleSubmit} className={classes.button}>
-          Submit
-        </button>
+            </select>
+            <p />
+            <button
+              type="button"
+              onClick={handleSubmit}
+              className={classes.button}
+            >
+              Submit
+            </button>
+          </div>
+        </div>
         <Tips rating={parseFloat(rating)} hidden={tipHidden} />
       </form>
     </div>

@@ -12,7 +12,7 @@ const App = ({ classes }) => (
       Evening Refuge Warrior Data Storage
     </Link>
     <NewWarrior />
-    <Link to="/show" className={classes.button}>
+    <Link to="/list" className={classes.button}>
       View Listed Warriors
     </Link>
   </div>
@@ -37,7 +37,8 @@ const styles = {
     height: "100%",
     width: "100%",
     backgroundPosition: "center",
-    backgroundRepeat: "no-repeat"
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover"
   },
   button: {
     display: "block",

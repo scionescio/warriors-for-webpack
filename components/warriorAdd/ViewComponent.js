@@ -6,7 +6,7 @@ import store from "../store";
 import { Link } from "react-router";
 import { compose } from "recompose";
 import injectSheet from "react-jss";
-import styles from "./styles";
+import styles from "../SuperStyles";
 
 const Warrior = ({
   updateUsername,
@@ -22,7 +22,7 @@ const Warrior = ({
   <div className={classes.containerWrapper}>
     <div className={classes.container}>
       <form className={classes.form}>
-        <div className={classes.formHeader}>Registration Form</div>
+        <div className={classes.formHeader}>Registration</div>
         <div className={classes.outerWrapper}>
           <div className={classes.innerWrapper}>
             <label for="username" />

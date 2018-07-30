@@ -8,29 +8,35 @@ import styles from "./styles";
 
 const ShowWarriors = ({ warriors, classes }) => {
   return (
-    <div>
-      <Link to="/">
-        <h3 className={classes.header}> Warrior Registration </h3>
+    <div className={classes.backgroundImage}>
+      <Link to="/" className={classes.header}>
+        Evening Refuge Warrior Data Storage
       </Link>
-      <h2 className={classes.header}>All added Warriors </h2>
-      <ul className={classes.inputAndOutput}>
-        {warriors.map(function(warrior, i) {
-          return (
-            // <Link to={"/show/$"{warrior.id}"}">
-            <li key={i}>
-              {"NAME: " +
-                warrior.username +
-                " , RATING: " +
-                warrior.rating +
-                " , WEAPON: " +
-                warrior.weapon}
-            </li>
-            // </Link>
-          );
-        })}
-      </ul>
-      <Link to="/">
-        <button>Add new warrior</button>
+      <div className={classes.containerWrapper}>
+        <div className={classes.container}>
+          <form className={classes.form}>
+            <div className={classes.formHeaderNew}>Register</div>
+            <ul className={classes.inputAndOutput}>
+              {warriors.map(function(warrior, i) {
+                return (
+                  // <Link to={"/show/$"{warrior.id}"}">
+                  <div key={i} className={classes.skill}>
+                    {"NAME: " +
+                      warrior.username +
+                      " , WEAPON: " +
+                      warrior.weapon +
+                      " , RATING: " +
+                      warrior.rating}
+                  </div>
+                  // </Link>
+                );
+              })}
+            </ul>
+          </form>
+        </div>
+      </div>
+      <Link to="/" className={classes.superButton}>
+        Add More Warriors
       </Link>
     </div>
   );

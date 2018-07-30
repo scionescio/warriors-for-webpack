@@ -1,6 +1,6 @@
 module.exports = {
   entry: "./index.js",
-  devtool: "source-map",
+  devtool: "cheap-module-eval-source-map",
   output: {
     filename: "static/bundle.js"
   },

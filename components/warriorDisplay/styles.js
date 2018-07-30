@@ -1,35 +1,29 @@
+import SuperStyles from "../SuperStyles";
+
 const styles = {
-  header: {
-    margin: [20, 0, 0, 0],
-    padding: [20, 0, 0],
+  ...SuperStyles,
+  superButton: {
+    display: "block",
+    padding: [10, 0],
+    textDecoration: "none",
     textAlign: "center",
-    fontWeight: "bold",
-    fontSize: 25,
-    fontFamily: "Courier"
+    justifyContent: "center",
+    fontFamily: "Roboto, sans-serif",
+    fontWeight: 200,
+    color: "white",
+    backgroundColor: "rgba(128, 136, 99, 0.9)",
+    margin: "0 auto",
+    width: 648
   },
-  container: {
-    margin: [10, 10, 10, 10],
-    padding: [0, 24, 24],
-    minHeight: "60%",
-    align: "middle",
-    backgroundColor: "blue"
-  },
-  inputAndOption: {
-    fontFamily: "Courier",
-    textAlign: "center"
-  },
-  form: {
-    margin: [10, 10, 10, 10],
-    padding: [24, 24, 24],
-    align: "middle",
-    backgroundColor: "white",
-    textAlign: "center",
-    fontFamily: "Courier"
-  },
-  button: {
-    margin: [0, 0],
-    fontWeight: "bold",
-    fontFamily: "Courier"
+  formHeaderNew: {
+    display: "flex",
+    justifyContent: "center",
+    fontFamily: "Roboto, sans-serif",
+    backgroundColor: "rgba(63, 35, 43, 0.8)",
+    padding: [20, 0],
+    color: "white",
+    fontWeight: 200,
+    width: 648
   }
 };
 
